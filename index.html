@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smooth Scroll</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header id="header">
+        <nav class="sticky">
+            <ul>
+                <li><a data-scroll href="#header">Header</a></li>
+                <li><a data-scroll href="#about">About</a></li>
+                <li><a data-scroll href="#content">Content</a></li>
+                <li><a data-scroll href="#footer">Footer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="profile"><h1>Profile</h1></section>
+    <section id="about"><h1>About</h1></section>
+    <main id="content"><h1>Content</h1></main>
+    <footer id="footer"><h1>Footer</h1></footer>
+
+    <script src="node_modules/smooth-scroll/dist/js/smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+</html>
